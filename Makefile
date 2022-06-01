@@ -154,7 +154,7 @@ vet:
 	go vet -vettool=$(shell which shadow) ./...
 
 errcheck:
-	go get github.com/kisielk/errcheck
+	go install github.com/kisielk/errcheck
 	errcheck ./test/...
 
 drone:
